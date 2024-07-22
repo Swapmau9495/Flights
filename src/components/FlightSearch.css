@@ -1,0 +1,275 @@
+.body-container {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 70vh;
+    background-color:skyblue;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+  }
+  
+  .flight-search-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #0bffaa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .flight-search-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .flight-search-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .dropdown {
+    min-width: 500px; /* Minimum width for desktop */
+  }
+  
+  /* Responsive adjustments for mobile screens */
+  @media only screen and (max-width: 375px) and (min-width: 320px) {
+    .cloud3 {
+      position: absolute;
+      top: -50px;
+      right: -500px;
+      max-width: 60%;
+     /* left:0px; */
+      box-sizing: border-box; /* Include padding and border in element's total width and height */
+      opacity: .8;
+       animation: cloud 8s linear 0s infinite reverse;
+       overflow-x: hidden;
+      z-index: 99;
+    }
+    .dropdown {
+      min-width: 675%; /* Full width on smaller screens */
+    }
+    .datepickersize {
+        min-width: 250%; /* Full width on smaller screens */
+      }
+      .error {
+          border: 1px solid red;
+          min-width: 250%;
+        }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .dropdown {
+      min-width: 600%; /* Full width on smaller screens */
+    }
+    .datepickersize {
+        min-width: 200%; /* Full width on smaller screens */
+      }
+      .error {
+          border: 1px solid red;
+          min-width: 200%;
+        }
+  }
+ 
+  @media only screen and (max-width: 768px ) and (min-width: 375px) {
+    .dropdown {
+      min-width: 800%; /* Full width on smaller screens */
+    }
+    .datepickersize {
+        min-width: 200%; /* Full width on smaller screens */
+      }
+      .error {
+          border: 1px solid red;
+          min-width: 300%;
+        }
+  }
+  @media only screen and (max-width: 1024px ) and (min-width: 768px) {
+    .dropdown {
+      min-width: 1000%; /* Full width on smaller screens */
+    }
+    .datepickersize {
+        min-width: 300%; /* Full width on smaller screens */
+      }
+      .error {
+          border: 1px solid red;
+          min-width: 300%;
+        }
+  }
+
+
+  .custom-datepicker .react-datepicker__input-container input {
+    height: 30px; /* Adjust this value to your desired height */
+    min-width: 480px;
+     /* font-size: 16px; */
+    padding: 10px; 
+    border-radius: none;
+    outline: black; 
+    box-shadow: black;
+    background-color: #0bffaa; 
+   
+  }
+
+  .custom-datepicker .react-datepicker__input-container input:focus {
+    border: 2px solid rgb(0, 0, 0); 
+    outline: black; 
+    border-radius: none;
+    box-shadow: none;
+  }
+ 
+
+  .error {
+    border: 1px solid red;
+    min-width: 500px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+
+  }
+
+  .datepickersize {
+   border: 1px solid black;
+    outline: black;
+    min-width: 500px; /* Minimum width for desktop */
+  }
+  
+ 
+
+  .search-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    border: 1px solid red;
+  }
+
+  .light {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+     bottom: 295px;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  animation: light 800ms ease-in-out 0s infinite alternate;
+  overflow-x: hidden;
+}
+
+.light2{
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+     bottom: 350px;
+  position: absolute;
+  z-index: 10;
+  left: 13px;
+  animation: light 800ms ease-in-out 0s infinite alternate;
+  overflow-x: hidden;
+}
+
+.light3{
+  width: 5px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+     bottom: 400px;
+  position: absolute;
+  z-index: 10;
+  
+  left: 10px;
+  animation: light 800ms ease-in-out 0s infinite alternate;
+  overflow-x: hidden;
+}
+.cloud {
+  position: absolute;
+  top: 0px;
+  right: -500px;
+ 
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  opacity: .8;
+   animation: cloud 4s linear 0s infinite reverse;
+   overflow-x: hidden;
+  z-index: 99;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 200px;
+  right: -800px;
+  max-width: 75%;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  opacity: .8;
+   animation: cloud 10s linear 0s infinite reverse;
+   overflow-x: hidden;
+  z-index: 99;
+}
+
+
+.cloud3 {
+  position: absolute;
+  top: -50px;
+  right: -500px;
+  max-width: 50%;
+ /* left:0px; */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  opacity: .8;
+   animation: cloud 8s linear 0s infinite reverse;
+   overflow-x: hidden;
+  z-index: 99;
+}
+
+.scaled-image-cloud2 {
+  transform: scale(0.75); /* Scale image to 50% of its original size */
+  transform-origin: top left; /* Origin of the scaling */
+} 
+
+.scaled-image-cloud3 {
+  transform: scale(0.5); /* Scale image to 50% of its original size */
+  transform-origin: top left; /* Origin of the scaling */
+}
+@keyframes light {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes cloud {
+  from {right:-500px;}
+  to {right: 100vw;}
+}
+
+  
